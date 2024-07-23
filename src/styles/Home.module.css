@@ -1,0 +1,252 @@
+.page {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.g_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.g_item h1 {
+  padding-top: 3%;
+  margin-bottom: 5%;
+  font-size: 2.5em;
+}
+
+.g_item p {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  font-weight:500;
+}
+
+/* About*/
+.about {
+  padding-top: 30px;
+  display: grid;
+}
+
+.info, .connect {
+  display: flex;
+  flex-direction: column;
+}
+
+/* About - Connect */
+.connect_button {
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 20%;
+  border: 3px solid transparent;
+  padding: 0.6em 1.0em;
+  font-size: 1.5em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: #797263;
+  color: #d6d1c6;
+}
+.connect_button:hover {
+  border-color: #d6d1c6;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1220px) {
+  .page {
+      grid-template-columns: 1fr; /* Single column */
+  }
+
+  .about {
+      grid-template-columns: 1fr 1fr; /* Two columns for skills */
+      gap: 1rem; /* Add gap between skill columns */
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .about{
+      grid-template-columns: 1fr; /* Single column for skills */
+      gap: 0; /* Remove gap between skill columns */
+  }
+}
+
+.Images{
+  margin-top: 14%;
+}
+
+/* Image Slider Style */
+.container__slider {
+  position: relative;
+  width: 70%;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.container__slider > button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  color: whitesmoke;
+  font-size: 40px;
+}
+
+.container__slider > button:active {
+  color: black;
+}
+
+.slider__btn_next {
+  position: absolute;
+  right: 0;
+}
+
+.slider__btn_prev {
+  position: absolute;
+  left: 0;
+}
+
+.container__slider__links {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container__slider__links-small {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 50%;
+  outline: none;
+  border: 0;
+  background-color: white;
+  border: 1px solid grey;
+  transition: background-color 1s ease;
+  margin: 0 2px;
+}
+
+.container__slider__links-small-active {
+  background-color: black;
+}
+
+.slider__item {
+  box-sizing: border-box;
+  min-width: 100%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  height: auto;
+  transform: translateX(0);
+  transition: transform 1s ease;
+}
+
+.slider__item-active-1 {
+  transform: translateX(0);
+}
+
+.slider__item-active-2 {
+  transform: translateX(-100%);
+}
+
+.slider__item-active-3 {
+  transform: translateX(-200%);
+}
+
+.slider__item-active-4 {
+  transform: translateX(-300%);
+}
+
+.slider__item-active-5 {
+  transform: translateX(-300%);
+}
+
+.slider__item-active-6 {
+  transform: translateX(-300%);
+}
+
+.slider__item-active-7 {
+  transform: translateX(-300%);
+}
+
+.slider__item img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1220px) {
+  .container__slider {
+    width: 40%;
+    transition: width 0.3s ease;
+  }
+  .Images{
+    margin-top: 4%;
+  }
+  .g_item p {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .container__slider {
+    width: 40%;
+    transition: width 0.3s ease;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container__slider {
+    width: 50%;
+    transition: width 0.3s ease;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container__slider {
+    width: 60%;
+    transition: width 0.3s ease;
+  }
+  .g_item p {
+    font-size: 1.2em;
+    transition: font-size 0.3s ease;
+  }
+  .g_item h1{
+    font-size: 2.0em;
+    transition: font-size 0.3s ease;
+  }
+}
+
+
+/* Light Theme Styling */
+@media (prefers-color-scheme: light) {
+  .g_item {
+    color: #292929;
+  }
+  .connect_button{
+    background-color: #bababa;
+    color: #292929;
+  }
+  .connect_button:hover{
+    border-color: #292929;
+  }
+}
+
+/* Dark Theme Styling */
+@media (prefers-color-scheme: dark) {
+  .g_item {
+    color: #d6d1c6;
+  }
+  .connect_button{
+    background-color: #24201f;
+    color: #d6d1c6;
+  }
+  .connect_button:hover{
+    border-color: #d6d1c6;
+  }
+}

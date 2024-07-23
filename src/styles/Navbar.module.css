@@ -1,0 +1,138 @@
+/* default styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* navbar */
+.navbar {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  min-height: 100px;
+}
+
+/* logo */
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: monospace;
+  margin-left: 5%;
+}
+
+/* ul */
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+  padding-left: 20%;
+  z-index: 3;
+}
+
+/* media queries */
+@media screen and (max-width: 915px) {
+  /* hamburger */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .logo {
+    margin: auto;
+  }
+  .bar {
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+  }
+
+  /* adding active class to the bars */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navMenu {
+    position: absolute;
+    flex-direction: column;
+    gap: 0;
+    top: 100px;
+    left: -100%;
+    text-align: start;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+    padding: 10px;
+    background-color: #ada38e; /* Light theme background color */
+    border: 1xp solid black;
+  }
+  .navMenu.active {
+    left: 0;
+  }
+  .navMenu li {
+    margin: 16px 0;
+  }
+}
+
+/* Light Theme Styling */
+@media (prefers-color-scheme: light) {
+  a {
+    font-weight: 500;
+    color: #292929;
+    padding-bottom: 7px;
+  }
+  .navLink:hover {
+    border-bottom: 3px solid #292929; /* Add bottom border on hover */
+  }
+  .activeItem {
+    border-bottom: 3px solid #292929;
+  }
+  .bar {
+    background-color: #292929;
+  }
+  .navbar {
+    background-color: #d0d0d0;
+  }
+  .navMenu {
+    background-color: #d0d0d0;
+  }
+}
+
+/* Dark Theme Styling */
+@media (prefers-color-scheme: dark) {
+  a {
+    font-weight: 500;
+    color: #d6d1c6;
+    padding-bottom: 7px;
+  }
+  .navLink:hover {
+    border-bottom: 3px solid #d6d1c6; /* Add bottom border on hover */
+  }
+  .activeItem {
+    border-bottom: 3px solid #d6d1c6;
+  }
+  .bar {
+    background-color: #d6d1c6;
+  }
+  .navbar {
+    background-color: #292929;
+  }
+  .navMenu {
+    background-color: #292929;
+  }
+}

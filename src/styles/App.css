@@ -1,0 +1,13 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+}
+.Content{
+  display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 80vh;
+}
+.card {
+  padding: 2em;
+}

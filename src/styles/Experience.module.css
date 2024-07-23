@@ -1,0 +1,72 @@
+.page {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+  
+  .SectionTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem; /* Add spacing below the heading */
+  }
+
+.ProjectContainer{
+    display: grid;
+    max-width: 90%;
+    height:300px;
+    margin: 0 auto;
+    place-items: center;
+    gap: 1rem;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ExperienceContainer{
+    display: grid;
+    margin: 0 auto;
+    place-items: center;
+    gap: 0rem;
+    align-items: center;
+    grid-template-columns: 1fr;
+    margin-top: 5%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1300px) {
+    .page{
+        grid-template-columns: 1fr;
+    }
+    .ProjectContainer {
+        display: grid;
+        max-width: 90%;
+        margin: 0 auto;
+        gap: 1rem;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .ProjectContainer{
+        display: grid;
+        max-width: 90%;
+        margin: 0 auto;
+        gap: 1rem;
+        align-items: center;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Light Theme Styling */
+@media (prefers-color-scheme: light) {
+    .ExperienceContainer {
+      color: #292929;
+    }
+  }
+  
+  /* Dark Theme Styling */
+  @media (prefers-color-scheme: dark) {
+    .ExperienceContainer {
+      color: #d6d1c6;
+    }
+  }
