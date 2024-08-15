@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
-import { Linkedin, DownloadIcon, Github, InstagramIcon } from "lucide-react"
+import { Linkedin, DownloadIcon, Github, InstagramIcon, Braces } from "lucide-react"
 import ImageSlider from '../components/ImageSlider';
 
 import img1 from '../assets/img1.png'
@@ -16,10 +16,6 @@ const images = [
         imgURL: img2,
         imgAlt: "img2"
     },
-    {
-        imgURL: img3,
-        imgAlt: "img3"
-    },
 ];
 
 function Home() {
@@ -33,8 +29,8 @@ function Home() {
     const handleGithubClick = () => {
         window.open('https://github.com/igor-eremn', '_blank');
     };
-    const handleInstagramClick = () => {
-        window.open('https://www.instagram.com/igor.eremn/', '_blank');
+    const handleBracesClick = () => {
+        window.open('https://leetcode.com/u/igor-eremn/', '_blank');
     };
 
     return(
@@ -50,17 +46,17 @@ function Home() {
                 <div className={`${styles.info}`}>
                     <h1>Igor Eremin</h1>
                     <p>- Graduate 2024 - Bachelor of Computer Science</p>
-                    <p>- Software Developer - SKYTRAC - 1 year</p>
-                    <p>- Web Developer - MagElements - 1 year</p>
+                    <p>- Web Developer - SKYTRAC Systems- 1 year</p>
+                    <p>- Front End Developer - MagElements - 1 year</p>
                     <p>- IT Technician - Apple - 2 years</p>
                 </div>
                 <div className={`${styles.connect}`}>
-                    <h1>Connect</h1>
+                    <h1>Explore More</h1>
                     <div className={`${styles.button_container}`}>
                         <button className={`${styles.connect_button}`} onClick={handleLinkedInClick}><Linkedin /></button>
                         <button className={`${styles.connect_button}`} onClick={handleDownloadClick}><DownloadIcon /></button>
                         <button className={`${styles.connect_button}`} onClick={handleGithubClick}><Github /></button>
-                        <button className={`${styles.connect_button}`} onClick={handleInstagramClick}><InstagramIcon /></button>
+                        <button className={`${styles.connect_button}`} onClick={handleBracesClick}><Braces/></button>
                     </div>
                 </div>
             </div>

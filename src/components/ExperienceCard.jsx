@@ -40,7 +40,7 @@ const JobTitle = styled.h4`
   margin: 0;
   font-size: 1rem;
   color: #555;
-  margin-right: 1rem;
+  margin-right: 3.5rem;
 `;
 
 const JobYears = styled.p`

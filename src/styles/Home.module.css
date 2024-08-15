@@ -15,7 +15,7 @@
 
 .g_item h1 {
   padding-top: 3%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   font-size: 2.5em;
 }
 
@@ -213,12 +213,20 @@
     transition: width 0.3s ease;
   }
   .g_item p {
-    font-size: 1.2em;
+    font-size: 1.0em;
     transition: font-size 0.3s ease;
   }
   .g_item h1{
-    font-size: 2.0em;
+    padding-top: 3%;
+    font-size: 1.5em;
     transition: font-size 0.3s ease;
+  }
+  .about {
+    padding-top: 0;
+  }
+  .connect_button {
+    padding: 0.48em 0.8em;
+    font-size: 1.2em;
   }
 }
 

@@ -20,9 +20,9 @@ function Experience() {
             <div className={`${styles.ExperienceContainer}`}>
             <ExperienceCard
                 company="SKYTRAC"
-                position="Embedded Software Engineer"
+                position="Web Developer"
                 years="2022-23"
-                description="Developed software for various chips, including temperature sensors and other embedded systems. Created GUI applications and testing software to ensure reliable performance and user-friendly interfaces."
+                description="Development of responsive web applications using React.js, eenhancing user experience and engagement. Enhanced proficiency in modern web developmnet practices, including version control, component testing and Agile methodologies."
             />
             <ExperienceCard
                 company="Apple"
@@ -32,7 +32,7 @@ function Experience() {
             />
             <ExperienceCard
                 company="MagElem"
-                position="Front-end Web Developer"
+                position="Front-End Web Developer"
                 years="2019-20"
                 description="Designed and implemented interactive and responsive web interfaces. Collaborated with backend developers to integrate user-facing elements with server-side logic. Optimized web applications for maximum speed and scalability."
             />

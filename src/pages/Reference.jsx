@@ -26,9 +26,9 @@ const references = [
     },
     {
       name: "Gordon Ross",
-      relation: "Former Manager",
-      description: "Branch Manager at SKYTRAC - Satcom Connectivity & Avionic Systems, Kelowna, BC, Canada",
-      email: "gordon.ross@example.com", // Updated email
+      relation: "Former Team Lead",
+      description: "Branch Team Lead at SKYTRAC Kelowna, BC, Canada",
+      email: "gordon.ross@example.com",
       link: 'https://www.skytrac.ca/'
     },
   ];

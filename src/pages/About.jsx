@@ -15,7 +15,7 @@ function About() {
             <div className={`${styles.g_item}`} id='AText'>
                 <h1>About Me</h1>
                 <p>Hello! I'm Igor Eremin, a recent Bachelor of Computer Science graduate from Thompson Rivers University based in North Vancouver.</p>
-                <p>During my university years, I gained hands-on experience in embedded software development, web development, and technical support. I am proficient in several programming languages, including C, Python, Java, HTML, CSS, JavaScript, and PHP. My strengths lie in critical thinking, troubleshooting, teamwork, and creativity.</p>
+                <p>During my university years, I gained hands-on experience in web development, software development, and technical support. I am proficient in several programming languages, including JavaScript, Python, HTML, CSS, C#, and PHP. My strengths lie in critical thinking, troubleshooting, teamwork, and creativity.</p>
                 <p>I am enthusiastic, passionate, and dedicated to delivering high-quality work. My goal is to leverage my skills to create innovative solutions and contribute to impactful projects in the tech industry. Whether solving complex software problems or designing sleek web interfaces, I bring creativity and attention to detail to every task.</p>
             </div>
             <div className={`${styles.g_item} ${styles.skill_column}`}>
